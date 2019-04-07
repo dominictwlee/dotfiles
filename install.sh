@@ -7,12 +7,12 @@ if [ -d ~/.nvm ]; then
   echo "✅ nvm is installed"
 else
   echo "nvm is not installed, installing..."
-  # curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
   echo "👍 nvm installation finished"
 fi
 
 echo "Installing node LTS"
-# nvm install --lts
+nvm install --lts
 
 if [ "$(which yarn)" ]; then
   echo "✅ yarn is installed"
